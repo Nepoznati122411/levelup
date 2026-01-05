@@ -101,26 +101,11 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      {/* Floating neon cubes (decorative) */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="floating-cube" style={{ left: "8%", top: "20%", width: 160, height: 120, animationDelay: "0s" }} />
-        <div className="floating-cube" style={{ left: "22%", top: "35%", width: 120, height: 90, animationDelay: "0.6s" }} />
-        <div className="floating-cube" style={{ left: "72%", top: "18%", width: 140, height: 100, animationDelay: "0.3s" }} />
-        <div className="floating-cube" style={{ left: "60%", top: "48%", width: 180, height: 130, animationDelay: "0.9s" }} />
-        <div className="floating-cube" style={{ left: "40%", top: "60%", width: 100, height: 80, animationDelay: "0.2s" }} />
-        <div className="floating-cube" style={{ left: "15%", top: "68%", width: 140, height: 100, animationDelay: "1.2s" }} />
-      </div>
+      {/* Floating cubes removed so video is the sole background */}
 
       {/* (XP donut removed per request) */}
 
-      {/* Animated grid overlay */}
-      <div className="absolute inset-0 grid-bg opacity-20" />
-
-      {/* Decorative glow (kept subtle) */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-30 pointer-events-none" />
-
-      {/* Scanlines (very subtle) */}
-      <div className="absolute inset-0 scanlines opacity-10 pointer-events-none" />
+      {/* Removed decorative overlays so video is the sole background */}
 
       {/* Content */}
       <div className="relative z-10 container mx-auto text-center px-4">
