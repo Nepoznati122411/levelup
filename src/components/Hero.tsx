@@ -87,20 +87,18 @@ export const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background video (put your MP4 in `public/videos/hero.mp4`) */}
-      <div className="absolute inset-0 hero-bg">
+      {/* Background video (uses src/assets/videolevelup.mp4 if available) */}
+      <div className="absolute inset-0">
         <video
           className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0"
+          src={videoSrc}
           autoPlay
           muted
           loop
           playsInline
-        >
-          <source src={videoSrc} type="video/mp4" />
-          {/* Fallback background color for browsers that don't support video */}
-        </video>
-        {/* Subtle dark overlay so text remains readable over video */}
-        <div className="absolute inset-0 bg-black/50" />
+        />
+        {/* Subtle overlay so text remains readable */}
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Floating neon cubes (decorative) */}
@@ -135,6 +133,8 @@ export const Hero = () => {
             STUDIO
           </span>
         </div>
+
+        {/* old hero image removed; video placed behind content */}
 
         {/* particle container for burst */}
         <div ref={particleRef} className="pointer-events-none absolute inset-0 z-20" />
